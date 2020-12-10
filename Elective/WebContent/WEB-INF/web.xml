@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Elective</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>indexPage</servlet-name>
+  	<jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>indexPage</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>createPage</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/crud/create.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>createPage</servlet-name>
+  	<url-pattern>/create</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>readPage</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/crud/read.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>readPage</servlet-name>
+  	<url-pattern>/read</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>updatePage</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/crud/update.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updatePage</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>deletePage</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/crud/delete.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>deletePage</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>showPage</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/view/show.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>showPage</servlet-name>
+  	<url-pattern>/show</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>showUpdPage</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/view/showUpd.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>showUpdPage</servlet-name>
+  	<url-pattern>/showUpd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SUP</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/upd/studentUpd.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SUP</servlet-name>
+  	<url-pattern>/studentUpd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>TUP</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/upd/teacherUpd.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TUP</servlet-name>
+  	<url-pattern>/teacherUpd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CUP</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/upd/courseUpd.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CUP</servlet-name>
+  	<url-pattern>/courseUpd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RCUP</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/upd/repcardUpd.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RCUP</servlet-name>
+  	<url-pattern>/repcardUpd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Auth</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/authorization/authorize.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Auth</servlet-name>
+  	<url-pattern>/authorize</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StudentHome</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/home/studentHome.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentHome</servlet-name>
+  	<url-pattern>/studentHome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>TeacherHome</servlet-name>
+  	<jsp-file>/WEB-INF/jsp/home/teacherHome.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TeacherHome</servlet-name>
+  	<url-pattern>/teacherHome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Controller</servlet-name>
+  	<servlet-class>myapp.Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Controller</servlet-name>
+  	<url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+</web-app>
